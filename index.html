@@ -1,0 +1,36 @@
+Duplicates removed 391  &  185428 Unique Values Remain 20 CCM
+Duplicates removed 307  &  128723 Unique Values Remain 21 CCM
+Duplicates removed 293  &  128111 Unique Values Remain 22 CCM
+
+Duplicates removed 596  &  224989 Unique Values Remain 20 CQC
+Duplicates removed 425  &  163913 Unique Values Remain 21 CQC
+Duplicates removed 441  &  170886 Unique Values Remain 22 CQC
+
+
+
+Duplicates removed 390  &  185179 Unique Values Remain 20 CCM
+Duplicates removed 596  &  224828 Unique Values Remain 20 CQC
+
+RosterTurkeyPrep
+Name
+TM
+EffectiveFrom
+
+
+
+
+/*SELECT 
+a.[employee_id]
+,a.[team_leader]
+FROM [vw_ods_week_roster_dateff] a
+JOIN
+(*/
+SELECT 
+employee_id
+,MAX(b.[effective_from]) latest_date
+FROM [vw_ods_week_roster_dateff] b
+WHERE effective_from <= Now()
+GROUP BY employee_id
+/*) lst
+ON a.[employee_id] = lst.employee_id
+AND a.[effective_from] = lst.latest_date*/
