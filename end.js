@@ -24,11 +24,14 @@ saveHighScore = e => {
     const jsonObjectToDataBase = JSON.stringify(score);
     console.log(jsonObjectToDataBase);
     const xhr = new XMLHttpRequest();
-    xhr.open("POST","https://script.google.com/macros/s/AKfycbyPCXPLHkePS09gIqkHBwpY3KAbISRIVqAMxVHn_ihbCOmld4W5Ws-_kAcUkKjD-dLHoA/exec");
+    xhr.open("POST","https://script.google.com/macros/s/AKfycbyPCXPLHkePS09gIqkHBwpY3KAbISRIVqAMxVHn_ihbCOmld4W5Ws-_kAcUkKjD-dLHoA/exec",true);
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Access-Control-Allow-Origin: true"); 
-    xhr.setRequestHeader("Access-Control-Allow-Credentials: true"); 
+//     xhr.setRequestHeader("Access-Control-Allow-Origin: true"); 
+//     xhr.setRequestHeader("Access-Control-Allow-Credentials: true"); 
+    xhr.withCredentials = true;
     xhr.send(jsonObjectToDataBase);
+    
+//     xhr.send(jsonObjectToDataBase);
 
      
     // EN ESTA PAGINA HAY QUE CONECTAR G-SHEETS PARA PODER TENER LA DATA
