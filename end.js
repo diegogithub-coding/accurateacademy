@@ -26,7 +26,7 @@ saveHighScore = e => {
     const xhr = new XMLHttpRequest();
     xhr.open("POST","https://script.google.com/macros/s/AKfycbyPCXPLHkePS09gIqkHBwpY3KAbISRIVqAMxVHn_ihbCOmld4W5Ws-_kAcUkKjD-dLHoA/exec");
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "*"); 
+//     xhr.setRequestHeader("Access-Control-Allow-Origin", "*"); 
     xhr.setRequestHeader("Access-Control-Allow-Credentials: true"); 
     xhr.send(jsonObjectToDataBase);
 
