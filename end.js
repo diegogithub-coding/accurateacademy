@@ -24,15 +24,18 @@ saveHighScore = e => {
     const jsonObjectToDataBase = JSON.stringify(score);
     console.log(jsonObjectToDataBase);
     const xhr = new XMLHttpRequest();
-    xhr.open("POST","https://script.google.com/macros/s/AKfycbyPCXPLHkePS09gIqkHBwpY3KAbISRIVqAMxVHn_ihbCOmld4W5Ws-_kAcUkKjD-dLHoA/exec");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(jsonObjectToDataBase);
+    xhr.open("POST","https://script.google.com/macros/s/AKfycbzsFWKxHn__b0jQESFPG5TOJu02rYhaka-7BmMijS_mKrp3qlfuFryfGLEotv98_uCI6Q/exec");
+    
+    try{
+        xhr.send(jsonObjectToDataBase);
+    }catch(err){
+        console.log("ERROR");
+    }
+    
+    
+    alert("Score SAVED!");
 
      
-    // EN ESTA PAGINA HAY QUE CONECTAR G-SHEETS PARA PODER TENER LA DATA
-    //window.location.assign("quiz.html"); 
-
-    // investigar como ponerun mensjae que se envio el score. 
 
 };
 
