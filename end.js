@@ -24,12 +24,12 @@ saveHighScore = e => {
     const jsonObjectToDataBase = JSON.stringify(score);
     console.log(jsonObjectToDataBase);
     const xhr = new XMLHttpRequest();
-    xhr.open("POST","https://script.google.com/macros/s/AKfycbyPCXPLHkePS09gIqkHBwpY3KAbISRIVqAMxVHn_ihbCOmld4W5Ws-_kAcUkKjD-dLHoA/exec",true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Access-Control-Allow-Methods: POST, GET, OPTIONS"); 
-    xhr.setRequestHeader("Access-Control-Allow-Origin: Content-Type"); 
+    xhr.open("POST","https://script.google.com/macros/s/AKfycbzsFWKxHn__b0jQESFPG5TOJu02rYhaka-7BmMijS_mKrp3qlfuFryfGLEotv98_uCI6Q/exec");
+//     xhr.setRequestHeader("Content-Type", "application/json");
+//     xhr.setRequestHeader("Access-Control-Allow-Methods: POST, GET, OPTIONS"); 
+//     xhr.setRequestHeader("Access-Control-Allow-Origin: Content-Type"); 
 //     xhr.setRequestHeader("Access-Control-Allow-Credentials: true"); 
-    xhr.withCredentials = true;
+//     xhr.withCredentials = true;
     xhr.send(jsonObjectToDataBase);
     
 //     xhr.send(jsonObjectToDataBase);
