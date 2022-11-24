@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-container {
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 1000px;
+    grid-gap: 1.5rem;
+
+  }
+  .image-container .image {
+    
+    position: relative;
+    padding-bottom: 100%;
+    display: flex;
+  }
+  .image-container .image img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .image-container .image img:nth-of-type(1) {
+    
+    filter: grayscale(1) brightness(40%);
+  }
+  .image-container .image img:nth-of-type(2) {
+    
+    clip-path: var(--clip-start);
+    transition: clip-path 0.5s;
+  }
+  .image-container .image:hover img:nth-of-type(2) {
+    
+    clip-path: var(--clip-end);
+  }
+  
+  /* Bottom left text https://www.w3schools.com/howto/howto_css_image_text.asp*/
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
