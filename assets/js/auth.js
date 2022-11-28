@@ -17,7 +17,7 @@ class Auth{
 
     logOut(){
         localStorage.removeItem("auth");
-        window.location.replace("index.html");  
+        window.location.replace("diegogithub-coding/accurateacademy/index.html");  
     }
 
 }
