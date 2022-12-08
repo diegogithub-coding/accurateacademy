@@ -1,0 +1,24 @@
+.grammarCard {
+ 
+    font-family: 'Poppins', sans-serif;
+    width: 700px;
+    border: 5px solid #008eff;
+    background-color: #2e3141;
+    border-radius: 25px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+   
+  }
+  img {
+    border-radius: 5%;
+  }
+  @media screen and (max-width: 500px) {
+   
+   
+    .grammarCard {
+        width: 70%;
+    }
+  }
