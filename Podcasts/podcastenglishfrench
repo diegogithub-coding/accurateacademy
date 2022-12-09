@@ -99,50 +99,21 @@
 
                         <div class="grid-item">
                             <div class="image-Topic">
-                                <a href="https://diegogithub-coding.github.io/accurateacademy/EnglishGrammar/A1A2/2_Number.html">   
-                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/numbers.png" />  
-                                    <div class="bottom-left"><strong> 1. Numbers </strong></div> 
+                                <a href="https://diegogithub-coding.github.io/accurateacademy/Podcasts/podcastsenglish.html">   
+                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/podcastenglish.png" />  
+                                    <div class="bottom-left"><strong> PODCASTS FOR LEARNING ENGLISH </strong></div> 
                                 </a>
-                            </div>                            
-                        </div>
-
-                        <div class="grid-item">
-                            <div class="image-Topic">
-                                <a href="https://diegogithub-coding.github.io/accurateacademy/EnglishGrammar/A1A2/1_Alphabet.html">  
-                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/alphabet.png" />
-                                    <div class="bottom-left"><strong> 2. The Alphabet </strong></div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="grid-item">
-                            <div class="image-Topic">
-                                <a href="https://diegogithub-coding.github.io/accurateacademy/EnglishGrammar/A1A2/3_SimplePresent.html">
-                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/simplepresent.png" />
-                                    <div class="bottom-left"><strong> 3. Present simple forms of ‘to be’ – am/is/are</strong></div>
-                                </a>
-                            </div>
+                            </div>                          
                         </div>
                         
                         <div class="grid-item">
                             <div class="image-Topic">
-                                <a href="https://diegogithub-coding.github.io/accurateacademy/EnglishGrammar/A1A2/4_This That Those.html">
-                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/thisthsesethatthose.png" />
-                                    <div class="bottom-left"><strong> 4. This These That Those</strong></div>
+                                <!-- <a href="https://diegogithub-coding.github.io/accurateacademy/EnglishGrammar/A1A2/2_Number.html">    -->
+                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/podcastfrench.png" />  
+                                    <div class="bottom-left"><strong> PODCASTS FOR LEARNING FRENCH </strong></div> 
                                 </a>
-                            </div>
-                        </div>   
-
-                        <div class="grid-item">
-                            <div class="image-Topic">
-                                <a href="https://diegogithub-coding.github.io/accurateacademy/EnglishGrammar/A1A2/5_singularpluralsa-an.html">
-                                    <img src="https://diegogithub-coding.github.io/accurateacademy/images/singularsplurals.png" />
-                                    <div class="bottom-left"><strong> 4. This These That Those</strong></div>
-                                </a>
-                            </div>
-                        </div>  
-                     
-            
+                            </div>                            
+                        </div>
                     </div>
         </div>
 
