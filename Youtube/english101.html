@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="https://diegogithub-coding.github.io/accurateacademy/assets/favicons/Accurate.png" sizes="32x32">
+<title>Youtube Videos</title>
+<style>
+	
+	.container {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	  padding-bottom: 100%; /* 4:3 Aspect Ratio  */
+	  padding-top: 25px;
+	}
+
+	/*  style the iframe with full height and width */
+	iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+    
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: 5px;
+      background: #000000;
+	}
+
+    #grid>div {
+      font-size: 30px;
+      padding: .5em;
+      color: #000000;
+      background: #000000;
+      text-align: center;
+    }
+    
+</style>
+</head>  
+<body>
+
+
+<div id="grid">
+  <div>
+      <div class="container">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/27QZ8gh5X27R9LRB02hD3n/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  </div>
+  
+
+  
+
+
+</div>
+</body>
+</html>
