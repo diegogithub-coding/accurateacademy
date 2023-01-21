@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+<title>Forma de Consultas</title>
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
 <link rel="stylesheet" href="https://diegogithub-coding.github.io/accurateacademy/assets/css/mainEnglish.css"/>
 <link rel="stylesheet" href="https://diegogithub-coding.github.io/accurateacademy/assets/css/grammarcard.css"/>   
 <link rel="icon" type="image/png" href="https://diegogithub-coding.github.io/accurateacademy/assets/favicons/Accurate.png" sizes="32x32">
@@ -40,7 +40,27 @@
     <!-- Start of the wild card -->
 
         
-
+    <form>
+        <label for="fname"><center>Time:</center></label><br>
+        
+              <input type="number" id="time" name="time">
+          
+        <label for="fname"><center>Calories:</center></label><br>
+        
+              <input type="number" id="calories" name="calories">
+          
+        <label for="fname"><center>AVG Speed:</center></label><br>
+              <input type="number" id="avgspeed" name="avgspeed">
+          
+        <label for="fname"><center>AVG Pulse:</center></label><br>
+              <input type="number" id="avgpulse" name="avgpulse">
+         </form>
+            <button type="submit" 
+           class="btn"   
+           id="saveDataid"
+           onclick="saveData(event)"
+           >Enviar Inform
+         </button>
 
 
         
