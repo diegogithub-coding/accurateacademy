@@ -77,8 +77,39 @@
       TESTS OF THE TOPIC FROM EASY O HARD
     </div> -->
 </body>
+<script>
 
-
+    const time = document.getElementById('time');
+    const calories = document.getElementById('calories');
+    const avgspeed = document.getElementById('avgspeed');
+    const avgpulse = document.getElementById('avgpulse');
+    
+    saveData = e => {
+        console.log("Clicked the save button");
+        e.preventDefault();
+        
+        const data = {
+            timex : time.value,
+            caloriesx : calories.value,
+            avgspeedx : avgspeed.value,
+            avgpulsex : avgpulse.value,
+            dateTime:  new Date(new Date().getTime())    
+        };
+        const jsonObjectToDataBase = JSON.stringify(data);
+        console.log(jsonObjectToDataBase);
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST","https://script.google.com/macros/s/AKfycbzRq_AAs8KRHH-sMregIZ_QxqqMqP_Jbpb0mE853MHHKcy5OkpXAR2d-Je11BJ2JxOe/exec");
+        
+            try{
+            xhr.send(jsonObjectToDataBase);
+        }catch(err){
+            console.log("ERROR");
+        }
+        
+        
+        alert("Score SAVED!");
+    }
+</script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/jquery.min.js"></script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/jquery.scrollex.min.js"></script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/browser.min.js"></script>
