@@ -91,9 +91,9 @@
 </body>
 <script>
 
-    const time = document.getElementById('full_name');
-    const calories = document.getElementById('phone_number');
-    const avgspeed = document.getElementById('email');
+    const full_name = document.getElementById('full_name');
+    const phone_number = document.getElementById('phone_number');
+    const email = document.getElementById('email');
     const ingles = document.getElementById('ingles');
     const frances = document.getElementById('frances');
     const ambos = document.getElementById('ambos');
@@ -107,13 +107,16 @@
 
     saveData = e => {
         console.log("Clicked the save button");
+        console.log(penales);
+        console.log(policiacos);
+        console.log(ingles);
         e.preventDefault();
         
         const data = {
-            timex : time.value,
-            caloriesx : calories.value,
-            avgspeedx : avgspeed.value,
-            avgpulsex : avgpulse.value,
+            // timex : time.value,
+            // caloriesx : calories.value,
+            // avgspeedx : avgspeed.value,
+            // avgpulsex : avgpulse.value,
             dateTime:  new Date(new Date().getTime())    
         };
         const jsonObjectToDataBase = JSON.stringify(data);
