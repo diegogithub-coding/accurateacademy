@@ -77,11 +77,11 @@
          <center><button type="submit" 
            class="btn"   
            id="saveDataid"
-           onclick="saveData(event); getValueCheckBoxes()"
+           onclick="getValueCheckBoxes()"  
            >Enviar Información
          </button></center>
 
-
+<!-- saveData(event); -->
         
 
 
@@ -91,10 +91,10 @@
 </body>
 <script>
 
-    const time = document.getElementById('time');
-    const calories = document.getElementById('calories');
-    const avgspeed = document.getElementById('avgspeed');
-    const avgpulse = document.getElementById('avgpulse');
+    // const time = document.getElementById('time');
+    // const calories = document.getElementById('calories');
+    // const avgspeed = document.getElementById('avgspeed');
+    // const avgpulse = document.getElementById('avgpulse');
     var result = "";
 
     function getValue() {
@@ -111,7 +111,7 @@
             console.log("You have selected : "+result);
         }
 
-    saveData = e => {
+    /*saveData = e => {
         console.log("Clicked the save button");
         e.preventDefault();
         
@@ -135,7 +135,7 @@
         
         
         alert("Score SAVED!");
-    }
+    }/*
 </script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/jquery.min.js"></script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/jquery.scrollex.min.js"></script>
