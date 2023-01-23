@@ -77,7 +77,7 @@
          <center><button type="submit" 
            class="btn"   
            id="saveDataid"
-           onclick="saveData(event)"
+           onclick="saveData(event); getValueCheckBoxes()"
            >Enviar Información
          </button></center>
 
@@ -95,7 +95,22 @@
     const calories = document.getElementById('calories');
     const avgspeed = document.getElementById('avgspeed');
     const avgpulse = document.getElementById('avgpulse');
-    
+    var result = "";
+
+    function getValue() {
+            var checkboxes = 
+                document.getElementsByName('laptop');
+      
+  
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    result += checkboxes[i].value 
+                        + " " + " Laptop, ";
+                }
+            }
+            console.log("You have selected : "+result);
+        }
+
     saveData = e => {
         console.log("Clicked the save button");
         e.preventDefault();
@@ -110,7 +125,7 @@
         const jsonObjectToDataBase = JSON.stringify(data);
         console.log(jsonObjectToDataBase);
         const xhr = new XMLHttpRequest();
-        xhr.open("POST","https://script.google.com/macros/s/AKfycbzRq_AAs8KRHH-sMregIZ_QxqqMqP_Jbpb0mE853MHHKcy5OkpXAR2d-Je11BJ2JxOe/exec");
+        xhr.open("POST","");
         
             try{
             xhr.send(jsonObjectToDataBase);
