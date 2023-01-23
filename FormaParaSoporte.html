@@ -99,13 +99,13 @@
 
     function getValue() {
             var checkboxes = 
-                document.getElementsByName('laptop');
+                document.getElementsByName('documentos');
       
   
             for (var i = 0; i < checkboxes.length; i++) {
                 if (checkboxes[i].checked) {
                     result += checkboxes[i].value 
-                        + " " + " Laptop, ";
+                        + " " + " documentos, ";
                 }
             }
             console.log("You have selected : "+result);
