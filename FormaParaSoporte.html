@@ -77,11 +77,11 @@
          <center><button type="submit" 
            class="btn"   
            id="saveDataid"
-           onclick="getValueCheckBoxes()"  
+           onclick="saveData(event)"  
            >Enviar Información
          </button></center>
 
-<!-- saveData(event); -->
+
         
 
 
@@ -91,27 +91,21 @@
 </body>
 <script>
 
-    // const time = document.getElementById('time');
-    // const calories = document.getElementById('calories');
-    // const avgspeed = document.getElementById('avgspeed');
-    // const avgpulse = document.getElementById('avgpulse');
-    var result = "";
+    const time = document.getElementById('full_name');
+    const calories = document.getElementById('phone_number');
+    const avgspeed = document.getElementById('email');
+    const ingles = document.getElementById('ingles');
+    const frances = document.getElementById('frances');
+    const ambos = document.getElementById('ambos');
+    const si = document.getElementById('si');
+    const no = document.getElementById('no');
+    const diversificado = document.getElementById('diversificado');
+    const penales = document.getElementById('penales');
+    const policiacos = document.getElementById('policiacos');
 
-    function getValue() {
-            var checkboxes = 
-                document.getElementsByName('documentos');
-      
-  
-            for (var i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i].checked) {
-                    result += checkboxes[i].value 
-                        + " " + " documentos, ";
-                }
-            }
-            console.log("You have selected : "+result);
-        }
 
-    /*saveData = e => {
+
+    saveData = e => {
         console.log("Clicked the save button");
         e.preventDefault();
         
@@ -135,7 +129,7 @@
         
         
         alert("Score SAVED!");
-    }/*
+    }
 </script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/jquery.min.js"></script>
 <script src="https://diegogithub-coding.github.io/accurateacademy/assets/js/jquery.scrollex.min.js"></script>
