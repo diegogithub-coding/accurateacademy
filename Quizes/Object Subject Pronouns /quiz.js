@@ -11,41 +11,95 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "Everyone who works in this department uses ___ pen.",
-        choice1: "a",
-        choice2: "an",
-        choice3: "the",
-        choice4: "-",
+        question: "I gave the book to _____. (Object pronoun)",
+        choice1: "I",
+        choice2: "me",
+        choice3: "him",
+        choice4: "her",
+        answer: 3
+    },
+    {
+        question: "_____ is going to the store. (Subject pronoun)",
+        choice1: "They",
+        choice2: "We",
+        choice3: "She",
+        choice4: "He",
+        answer: 3
+    },
+    {
+        question: "_____ are playing soccer together. (Subject pronoun)",
+        choice1: "I",
+        choice2: "They",
+        choice3: "He",
+        choice4: "She",
+        answer: 2
+    },
+    {
+        question: "He cooked dinner for _____. (Object pronoun)",
+        choice1: "I",
+        choice2: "us",
+        choice3: "them",
+        choice4: "her",
         answer: 1
     },
     {
-        question: "Tina gave me ____ book for my birthday",
-        choice1: "a",
-        choice2: "-",
-        choice3: "the",
-        choice4: "an",
-        answer: 1
-    },
+        question: "The dog chased _____ tail. (Possessive pronoun)",
+        choice1: "its",
+        choice2: "his",
+        choice3: "her",
+        choice4: "their",
+        answer: 2
+    }
+    ,
     {
-        question: "I read _____ book Tina gave me while I was on holiday.",
-        choice1: "the",
-        choice2: "an",
-        choice3: "-",
-        choice4: "a",
-        answer: 1
-    },
-    {
-        question: "Sally lives in ___ big house in the country.",
-        choice1: "a",
-        choice2: "the",
-        choice3: "-",
-        choice4: "an",
+        question: "We saw _____ at the concert. (Object pronoun)",
+        choice1: "them",
+        choice2: "she",
+        choice3: "he",
+        choice4: "I",
         answer: 1
     }
+    ,
+    {
+        question: "You should call _____. (Object pronoun)",
+        choice1: "me",
+        choice2: "her",
+        choice3: "him",
+        choice4: "them",
+        answer: 1
+    }
+    ,
+    {
+        question: "The teacher graded _____ homework. (Object pronoun)",
+        choice1: "our",
+        choice2: "his",
+        choice3: "their",
+        choice4: "her",
+        answer: 1
+    }
+    ,
+    {
+        question: "I will see _____ later. (Object pronoun)",
+        choice1: "you",
+        choice2: "her",
+        choice3: "them",
+        choice4: "me",
+        answer: 1
+    }
+    ,
+    {
+        question: "He is taller than _____. (Object pronoun)",
+        choice1: "me",
+        choice2: "she",
+        choice3: "them",
+        choice4: "him",
+        answer: 1
+    }
+
 ]
 
 const CORRECT = 10;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 10;
 
 startQuiz = () => { // start the quiz function 
     questionCounter = 0;
@@ -60,8 +114,8 @@ getNewQuestion = () =>{ // function to get info of the questions and asnwers
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS){
         // go to the end page becuase the quiz finished.
         localStorage.setItem("mostRecentScore", score); // code to access te score in te end page.
-        return window.location.assign("/QuizTest/end.html");
-    }
+        return window.location.assign("https://diegogithub-coding.github.io/accurateacademy/Quizes/Object Subject Pronouns /end.html");    
+    }                                                          
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`; // updates the questions number
     // update the progress progressBarFull
