@@ -114,7 +114,7 @@ getNewQuestion = () =>{ // function to get info of the questions and asnwers
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS){
         // go to the end page becuase the quiz finished.
         localStorage.setItem("mostRecentScore", score); // code to access te score in te end page.
-        return window.location.assign("https://diegogithub-coding.github.io/accurateacademy/Quizes/Object Subject Pronouns /end.html");    
+        return window.location.assign("https://diegogithub-coding.github.io/accurateacademy/Quizes/Object_Subject_Pronouns/end.html");    
     }                                                          
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`; // updates the questions number
