@@ -16,7 +16,7 @@ saveHighScore=(e)=>{
         usernamef : username.value,
         score : mostRecentScore,
         level : 'A1',
-        notopic : 'Present Simple'
+        notopic : 'Object Subject Pronouns Easy'
          
     };
     const jsonObjectToDataBase = JSON.stringify(data);
