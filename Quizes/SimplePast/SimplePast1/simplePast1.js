@@ -32,7 +32,7 @@ let questions = [
         question: "My sister _____ very happy when she got her new car.",
         choice1: "was",
         choice2: "were",
-        answer: 2
+        answer: 1
     },
     {
         question: "The flowers _____ beautiful in the garden last spring.",
