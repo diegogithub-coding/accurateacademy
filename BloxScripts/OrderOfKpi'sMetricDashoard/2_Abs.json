@@ -1,0 +1,65 @@
+{
+    "type": "ColumnSet",
+    "spacing": "small",
+    "separator": true,
+    "style": {
+        "padding-top": "5px",
+        "padding-bottom": "15px"
+    },
+    "columns": [
+        {
+            "type": "Column",
+            "class": "valueTitle",
+            "style": {
+                "flex": "none",
+                "min-width": "100px",
+                "min-height": "20px"
+            },
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "id": "",
+                    "weight": "bold",
+                    "class": "valueTitle",
+                    "size": "default",
+                    "text": "Attendance  %"
+                }
+            ]
+        },
+        {
+            "type": "Column",
+            "class": "valueTitle",
+            "style": {
+                "min-width": "auto",
+                "min-height": "20px",
+                "text-indent": "65px"
+            },
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "id": "",
+                    "class": "",
+                    "weight": "light",
+                    "size": "normal",
+                    "color": "green",
+                    "text": "Goal: {panel:Attendance Target}"
+                }
+            ]
+        },
+        {
+            "type": "Column",
+            "separator": true,
+            "spacing": "",
+            "class": "valueTitle",
+            "width": "200px",
+            "items": [
+                {
+                    "spacing": "",
+                    "type": "TextBlock",
+                    "text": "<span class='blox-sparkline' type='line' line-color='purple' width='180' height='19' padding='0' line-width='3' fill-color='thistle' point-color:'#28467a'>{spark:Attendance}</span>",
+                    "horizontalAlignment": "center"
+                }
+            ]
+        }
+    ]
+},
