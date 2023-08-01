@@ -19,3 +19,7 @@ img {
       margin-bottom: 50px; /* Adjust the margin for smaller screens */
   }
 }
+.grammarCard ul {
+  text-align: left; /* Additional CSS to align <li> tags to the left */
+  padding-left: 20px;
+}
