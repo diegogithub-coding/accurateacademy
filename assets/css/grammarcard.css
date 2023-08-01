@@ -1,24 +1,21 @@
 .grammarCard {
- 
-    font-family: 'Poppins', sans-serif;
-    width: 800px;
-    border: 5px solid #008eff;
-    background-color: #2e3141;
-    border-radius: 25px;
-    padding: 50px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-   
-   
+  font-family: 'Poppins', sans-serif;
+  border: 5px solid #008eff;
+  background-color: #2e3141;
+  border-radius: 25px;
+  padding: 20px; /* Adjust the padding for smaller screens */
+  margin: 20px auto; /* Adjust the margin for smaller screens */
+  max-width: 800px; /* Set a maximum width for larger screens */
+  text-align: center; /* Center the content */
+}
+img {
+  border-radius: 5%;
+  width: 100%; /* Make the image responsive */
+}
+@media screen and (max-width: 500px) {
+  .grammarCard {
+      max-width: 90%; /* Reduce the width on smaller screens */
+      margin-top: 50px; /* Adjust the margin for smaller screens */
+      margin-bottom: 50px; /* Adjust the margin for smaller screens */
   }
-  img {
-    border-radius: 5%;
-  }
-  @media screen and (max-width: 500px) {
-   
-   
-    .grammarCard {
-        width: 70%;
-    }
-  }
+}
