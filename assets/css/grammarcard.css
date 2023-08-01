@@ -1,5 +1,4 @@
 .grammarCard {
-  font-family: 'Poppins', sans-serif;
   border: 5px solid #008eff;
   background-color: #2e3141;
   border-radius: 25px;
@@ -7,6 +6,7 @@
   margin: 20px auto; /* Adjust the margin for smaller screens */
   max-width: 800px; /* Set a maximum width for larger screens */
   text-align: center; /* Center the content */
+  color: #fff; /* Set the text color to white */
 }
 img {
   border-radius: 5%;
@@ -14,12 +14,40 @@ img {
 }
 @media screen and (max-width: 500px) {
   .grammarCard {
-      max-width: 90%; /* Reduce the width on smaller screens */
-      margin-top: 50px; /* Adjust the margin for smaller screens */
-      margin-bottom: 50px; /* Adjust the margin for smaller screens */
+    max-width: 90%; /* Reduce the width on smaller screens */
+    margin-top: 50px; /* Adjust the margin for smaller screens */
+    margin-bottom: 50px; /* Adjust the margin for smaller screens */
   }
 }
-.grammarCard ul {
-  text-align: left; /* Additional CSS to align <li> tags to the left */
-  padding-left: 20px;
+.grammarCard table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 15px; /* Add border radius to the table */
+  overflow: hidden; /* Ensure the border radius is applied correctly */
+}
+.grammarCard th, .grammarCard td {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: left;
+}
+.grammarCard th {
+  background-color: #008eff;
+  color: #fff;
+}
+.grammarCard tr:nth-child(even) {
+  background-color: #3f4256;
+}
+.grammarCard tr:nth-child(odd) {
+  background-color: #2e3141;
+}
+.grammarCard h2 {
+  color: #008eff;
+  margin-top: 30px;
+}
+.grammarCard h2:first-child {
+  margin-top: 0;
+}
+.grammarCard p {
+  margin-bottom: 15px;
 }
