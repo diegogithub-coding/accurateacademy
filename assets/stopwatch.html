@@ -1,9 +1,14 @@
+I want you to act as a web developer, can you please perform the following tasks in the code provided.
+
+1. Add a Text box big enogh to take notes.
+2. Check and verity that the text box added can be full responsive.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stopwatch</title>
+  <title>Your Page Title</title>
   <style>
 html,
 body {
@@ -800,6 +805,20 @@ body {
   stroke-dasharray: 136%;
   stroke-dashoffset: -136%;
 }
+    .note-box {
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+      resize: vertical; /* Allow vertical resizing */
+    }
+
 
   </style>
 </head>
@@ -904,7 +923,10 @@ body {
   </div>
 
   <span class="clock-time">00:00,000</span>
-
+<!-- New text box -->
+<div class="note-box" contenteditable="true" placeholder="Type your notes here..."></div>
+<!-- ADD ADDITIONAL SPACE HERE -->
+<div class="extra-space"></div>
   <div class="clock-buttons">
     <button type="button" class="clock-button" data-role="clock-reset">
       <span class="clock-button__text">Reset</span>
@@ -1065,7 +1087,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+  // Function to set focus on the text box when the page loads
+  document.addEventListener("DOMContentLoaded", function() {
+    const noteBox = document.querySelector(".note-box");
+    noteBox.focus();
+  });
 
 </script>
 </html>
+ 
