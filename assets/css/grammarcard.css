@@ -51,3 +51,7 @@ img {
 .grammarCard p {
   margin-bottom: 15px;
 }
+.grammarCard ul {
+  text-align: center; /* Center-align the bullet points */
+  list-style-position: inside; /* Move the bullet points inside the list items */
+}
