@@ -65,3 +65,7 @@ img {
   display: block; 
   margin-bottom: 10px; /* Add space between links */
 }
+.grammarCard li {
+  text-align: left;
+  
+}
