@@ -1,1 +1,18 @@
-<elevenlabs-convai agent-id="FtoQUkEtT1Bex9WNjyPr"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+<elevenlabs-convai agent-id="FtoQUkEtT1Bex9WNjyPr"></elevenlabs-convai>
+<script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+
+<script>
+    // Hide the "Powered by ElevenLabs" element on page load
+    window.addEventListener('load', function() {
+        const hidePoweredBy = () => {
+            const poweredByElement = document.querySelector('._poweredBy_p1gqy_310');
+            if (poweredByElement) {
+                poweredByElement.style.display = 'none';
+            } else {
+                // If not found, retry after a short delay
+                setTimeout(hidePoweredBy, 100); // Retry every 100ms until the element appears
+            }
+        };
+        hidePoweredBy();
+    });
+</script>
